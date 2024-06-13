@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "ClashDisplay";
+  src: url("../../assets/fonts/ClashDisplay-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "ClashGrotesk";
+  src: url("../../assets/fonts/ClashGrotesk-Light.otf") format("opentype");
+}

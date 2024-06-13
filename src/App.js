@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Routing from "./services/config/router";
+import SignupHeader from "./components/SignupHeader";
 
 function App() {
   return (
-    <div className=' bg-black' >
-      
-    </div>
+    <>
+      <SignupHeader />
+      <Routing />
+    </>
   );
 }
 
