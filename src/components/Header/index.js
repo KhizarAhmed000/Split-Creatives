@@ -3,8 +3,8 @@ import { images } from "../../services/config/images";
 
 export default function Header() {
   return (
-    <div className="w-screen ">
-      <div className="text-white mx-20 flex justify-between items-center text-sm  ClashDisplay border-b border-white">
+    <div className=" ">
+      <div className="text-white mx-20 flex justify-between items-center text-sm  ClashDisplay border-b border-white w-[85%] max-w-[1920px]">
         <div>
           <img src={images.splitLogo}  alt="#" className="w-20" />
         </div>

@@ -3,24 +3,30 @@ import Header from "../../components/Header";
 import { images } from "../../services/config/images";
 
 export default function Home() {
+
+  const bgGradient = {
+    backgroundImage: images.firstGradient,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }
   return (
-    <div className="bg-primary z-[-2] overflow-x-hidden">
+    <div className="bg-primary z-[-2] overflow-x-hidden relative " >
       <Header />
-      <div className="mx-[6%] py-[5%]">
+      <div className="mx-[6%] py-[5%]  items-center relative z-2 " >
         {/* body container*/}
-        <div className="text-white flex justify-center ">
+        <div className="max-w-[1920px] text-white flex justify-center items-center " >
           {/* first section*/}
-          <div>
+          <div className=" ">
             {/* left column*/}
-            <div className="flex justify-start  border-b w-[95%] border- mb-8 pb-8">
-              <div className="ClashDisplay text-8xl font-bold w-[95%]  "> 
+            <div className="flex justify-left align-end  border-b w-[95%] border- mb-8 pb-8">
+              <div className="ClashDisplay xl:text-[8rem] lg:text-[5rem] leading-[1] font-bold w-[95%]  ">
                 LET'S BUILD THE NEXT BIG THING
               </div>
-              <div className="absolute left-[40%] top-[35%]">
-                <img src={images.cube} alt="#" className=" w-52" />
+              <div className="">
+                <img src={images.cube} alt="#" className="relative right-[200px]  w-[30rem]" />
               </div>
             </div>
-            <div className="flex justify-between w-[95%]">
+            <div className="flex justify-between w-[95%] relative z-1">
               <div className="flex justify-left items-center ">
                 <div className="text-teal-500 text-4xl ClashDisplay font-bold mr-3">
                   3Y
@@ -87,34 +93,36 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <div className="absolute left-0   top-[70vh]">
+        <div className="absolute left-[-200px]   top-[70vh] z-1">
           <img src={images.firstGradient} />
-        </div> 
-        madarchod idk how to
-        */}
+        </div>
 
-        <div className="flex pt-24 z-10">
+
+
+        <div className=" relative flex justify-between pt-24 z-2 text-white">
           <div>
             <div className="flex relative">
               <div>
-                <img src={images.guy1} alt="#" className="relative left-10 z-30 w-24 h-auto"/> 
+                <img src={images.guy1} alt="#" className=" z-30 w-12 h-auto" />
               </div>
               <div>
-                <img src={images.guy1} alt="#" className="relative left-5 z-10 w-24 h-auto" />
+                <img src={images.guy1} alt="#" className="relative right-5 z-10 w-12 h-auto" />
               </div>
               <div>
-                <img src={images.guy1} alt="#" className="z-20 w-24 h-auto"/>
+                <img src={images.guy1} alt="#" className="relative right-10 z-20 w-12 h-auto" />
               </div>
             </div>
             <div>FOUNDERS</div>
             <div>OF SPLITCREATIVES</div>
           </div>
-          <div>
-            Well-crafted development and design solutions are essential to
-            presenting products that your audience will fall in love with. This
-            can provide a company with a competitive advantage and contribute to
-            its overall success. What do you think?
-          </div>
+          <div className="ClashDisplay w-[60%] xl:text-5xl text-left"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Well-crafted development and design solutions are essential to presenting products that your audience will fall in love with. This can provide a company with a competitive advantage and contribute to its overall success. What do you think?</div>
+        </div>
+
+        <div className="container mx-auto relative z-2 bg-white mt-[200px] rounded-[40px]">
+        <img src={images.containerTop} className="w-auto relative top-[-116px]"/>
+        <div>
+          
+        </div>
         </div>
       </div>
     </div>

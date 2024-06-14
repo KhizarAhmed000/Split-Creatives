@@ -12,7 +12,7 @@ export default function SignupHeader() {
           </div>
         </div>
       </div> */}
-      <div className="w-screen h-auto grid place-items-center bg-white p-1 ClashDisplay text-[10px] font-semibold">
+      <div className="w-auto overflow-x-hidden  h-auto grid place-items-center bg-white p-1 ClashDisplay text-[10px] font-semibold">
         SIGN UP TO GET A FREE MOCKUP TODAY 🎉
         </div>
     </div>

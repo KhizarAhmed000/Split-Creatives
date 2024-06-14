@@ -10,9 +10,10 @@ import guy1 from "../../assets/images/guy1.png";
 import guy2 from "../../assets/images/guy2.png";
 import guy3 from "../../assets/images/guy3.png";
 import firstGradient from "../../assets/images/Rectangle.png";
-
+import containerTop from "../../assets/images/container-top.png";
 export const images = {
   downArrow,
+  containerTop,
   pen,
   splitLogo,
   designIcon,
