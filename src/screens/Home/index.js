@@ -119,10 +119,24 @@ export default function Home() {
         </div>
 
         <div className="container mx-auto relative z-2 bg-white mt-[200px] rounded-[40px]">
-        <img src={images.containerTop} className="w-auto relative top-[-116px]"/>
-        <div>
-          
-        </div>
+          <div className="relative top-[-116px]">
+
+            <img src={images.containerTop} className="w-auto relative " />
+            <div className=" text-black ClashDisplay flex justify-between">
+              <div>
+                OUR WORKS
+              </div>
+              <div>
+                Our software development company offers customized solutions to enhance the user experience and drive sales
+              </div>
+              <div>
+                MORE CLASS
+              </div>
+            </div>
+          </div>
+          <div>
+
+          </div>
         </div>
       </div>
     </div>
