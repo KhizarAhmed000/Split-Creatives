@@ -11,7 +11,19 @@ import guy2 from "../../assets/images/guy2.png";
 import guy3 from "../../assets/images/guy3.png";
 import firstGradient from "../../assets/images/Rectangle.png";
 import containerTop from "../../assets/images/container-top.png";
+import fulfldBanner from "../../assets/images/fulfldBanner.png";
+import sliderArrow from "../../assets/images/slider-arrow.png";
+import transparentContainerTop from "../../assets/images/container-c.svg";
+import infinity from "../../assets/images/infinity.png";
+import split from "../../assets/images/split.png";
+import whiteContainerTop from "../../assets/images/whiteContainerTop.svg"
 export const images = {
+  whiteContainerTop,
+  split,
+  infinity,
+  transparentContainerTop,
+  sliderArrow,
+  fulfldBanner,
   downArrow,
   containerTop,
   pen,
