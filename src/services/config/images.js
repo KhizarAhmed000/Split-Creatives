@@ -17,7 +17,14 @@ import transparentContainerTop from "../../assets/images/container-c.svg";
 import infinity from "../../assets/images/infinity.png";
 import split from "../../assets/images/split.png";
 import whiteContainerTop from "../../assets/images/whiteContainerTop.svg"
+import ourServicesArrow from "../../assets/images/ourservicesarrow.svg";
+import containerRectangle from "../../assets/images/containerImage.png";
+import star from "../../assets/images/star.png";
+
 export const images = {
+  star,
+  containerRectangle,
+  ourServicesArrow,
   whiteContainerTop,
   split,
   infinity,

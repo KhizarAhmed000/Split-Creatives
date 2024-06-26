@@ -261,43 +261,209 @@ export default function Home() {
 
 
       </div>
-      <div className="w-screen px-[10%] second-gradient  py-[5%] mb-12">
-        <div className="ClashDisplay  text-white xl:text-8xl font-bold w-[29%] pl-10  ">
-          OUR BENEFITS
+      <div className="w-screen px-[10%] flex  flex-col items-center second-gradient  py-[5%] mb-12">
+        <div className=" max-w-[1920px]">
+          <div className="ClashDisplay  text-white xl:text-8xl font-bold w-[29%]   ">
+            OUR BENEFITS
+          </div>
+          <div className="flex justify-between gap-28  container mx-auto">
+            <div
+              className="mt-[200px] custom-height bg-white  text-white w-[300px]  border-l-[1px] border-r-[1px] border-b-[1px]  rounded-bl-3xl rounded-br-3xl border-[#b6b6bd] backdrop-blur-[7.5px] "
+            >
+              <div className=' right-[0.4%] max-w-[120%] relative bottom-[100px]'>
+
+                <img src={images.whiteContainerTop} className='absolute w-[100.8%] max-w-[120%] ' />
+                <div className="px-7  relative top-[50px]">
+
+                  <div className='w-auto pb-7 mb-7   border-b-[1px] border-black'>
+                    <img src={images.split} className='w-[20%]' />
+                  </div>
+                  <div className="slider-container">
+                    <Slider {...settingsForWhiteContainer}>
+
+                      <div className='ClashDisplay text-black text-xl mb-7'>
+                        We offer a diverse range of products and services across various industries to meet your specific needs
+                      </div>
+                      <div className='ClashDisplay text-black text-xl mb-7'>
+                        dabba
+                      </div><div className='ClashDisplay text-black text-xl mb-7'>
+                        dabba
+                      </div>
+                    </Slider>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <SlantedContainer firstHeading={"300K"} secondHeading={"Total Funding"} description={"Hard work and dedication of the Split Creatives team help our clients secure new successful investment deals."} />
+            <SlantedContainer firstHeading={"350+"} secondHeading={"Completed Projects "} description={"We aim to provide the perfect digital solutions for your business, making this process friendly and chill."} />
+            <SlantedContainer img={images.infinity} secondHeading={"Total Funding"} description={"We aim to provide the perfect digital solutions for your business, making this process friendlty and chill"} />
+          </div>
         </div>
+      </div>
 
-        <div className="flex justify-around max-w-[1920px] self-center container mx-auto">
-          <div
-            className="mt-[200px] custom-height bg-white  text-white w-[300px]  border-l-[1px] border-r-[1px] border-b-[1px]  rounded-bl-3xl rounded-br-3xl border-[#b6b6bd] backdrop-blur-[7.5px] "
-          >
-            <div className=' right-[0.4%] max-w-[120%] relative bottom-[106px]'>
+      <div className="container mx-auto relative custom-height-white-container z-2 bg-white mt-[200px] rounded-[40px]">
+        <div className="relative pt-10 pb-1  " >
 
-              <img src={images.whiteContainerTop} className='absolute w-[100.8%] max-w-[120%] ' />
-              <div className="px-7  relative top-[50px]">
+          <img src={images.containerTop} className=" top-[-116px] w-auto absolute " />
 
-                <div className='w-auto pb-7 mb-7   border-b-[1px] border-black'>
-                  <img src={images.split} className='w-[20%]' />
+          <div className="ClashDisplay xl:text-8xl font-bold w-[29%] pl-10 relative top-[-116px]">
+            OUR SERVICES
+          </div>
+
+          <div>
+            {/* container start */}
+            <div className="flex justify-between items-center border-[#d0d0d2] border m-8 p-6 rounded-xl bg-[#f5f5f7]">
+              <div className="flex justify-start items-center">
+                <div>
+                  <img src={images.designIcon} alt="#" className="w-12 h-12" />
                 </div>
-              <div className="slider-container">
-                <Slider {...settingsForWhiteContainer}>
+                <div className="flex justify-between text-s ClashDisplay items-center bg-black text-white rounded-[30px] h-12 px-7 font-semibold cursor-pointer ">
+                  DESIGN
+                </div>
+              </div>
+              <div className="text-[#02021E] ClashDisplay w-[40%]">
+                By putting user's needs at the forefront, we tell a unique story of your company, juggling with fancy visual elements
+              </div>
+              <img src={images.ourServicesArrow} />
+            </div>
 
-                <div className='ClashDisplay text-black text-xl mb-7'>
-                  We offer a diverse range of products and services across various industries to meet your specific needs
+            <div className="flex justify-between items-center border-[#d0d0d2] border m-8 p-6 rounded-xl bg-[#f5f5f7]">
+              <div className="flex justify-start items-center">
+                <div className="flex justify-between text-s ClashDisplay items-center bg-black text-white rounded-[30px] h-12 px-7 font-semibold cursor-pointer ">
+                  DEVELOPMENT
                 </div>
-                <div className='ClashDisplay text-black text-xl mb-7'>
-                  dabba
-                </div><div className='ClashDisplay text-black text-xl mb-7'>
-                  dabba
+                <div>
+                  <img
+                    src={images.developmentIcon}
+                    alt="#"
+                    className="w-12 h-12"
+                  />
                 </div>
-                </Slider>
+              </div>
+              <div className="text-[#02021E] ClashDisplay w-[40%]">
+                By putting user's needs at the forefront, we tell a unique story of your company, juggling with fancy visual elements
+              </div>
+              <img src={images.ourServicesArrow} />
+            </div>
+
+            <div className="flex justify-between items-center border-[#d0d0d2] border m-8 p-6 rounded-xl bg-[#f5f5f7]">
+              <div className="flex justify-start items-center">
+                <div>
+                  <img src={images.wordpressIcon} alt="#" className="w-12 h-12" />
+                </div>
+                <div className="flex justify-between text-s ClashDisplay items-center bg-black text-white rounded-[30px] h-12 px-7 font-semibold cursor-pointer ">
+                  WORDPRESS
+                </div>
+              </div>
+              <div className="text-[#02021E] ClashDisplay w-[40%]">
+                By putting user's needs at the forefront, we tell a unique story of your company, juggling with fancy visual elements
+              </div>
+              <img src={images.ourServicesArrow} />
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+      <div className="w-screen  flex flex-col items-center">
+        <div className="2xL:p-[200px] sm:p-[9%] max-w-[1920px] flex flex-col items-end mt-36">
+          <div className="text-white  text-4xl ClashDisplay w-[50%]">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here you can see how our clients describe their experience with the Split Creatives team
+          </div>
+          <div className="w-[100%] mx-auto grid grid-cols-3 gap-20  mt-12 
+          ">
+            <div className="bg-container">
+                <div className="ClashDisplay text-white relative w-[70%] left-[15%] top-[60%]">
+                  <div className="text-6xl font-bold mb-12">
+                    4.9
+                  </div>
+                  <div>
+                    Chances are you'll be 98% satisfied with the result. 4.9 is our average
+                  </div>
+                </div>
+            </div>
+            
+            <div className="bg-[#192B39] rounded-xl p-10 ">
+              <div className="ClashDisplay flex items-center ">
+                <div className="text-white text-2xl pr-3">5.0</div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
               </div>
 
+              <div className="ClashDisplay text-xl text-white mt-16">
+                Cillum ex tempor tempor pariatur eiusmod exercitation pariatur Lorem elit. Ut nisi cillum consequat tempor amet ad non ad ad elit fugiat exercitation qui. Enim enim irure labore ex Lorem adipisicing culpa reprehenderit eu do pariatur aliqua sunt. Tempor tempor qui deserunt amet elit consequat ullamco mollit commodo enim aute id velit labore. Labore elit nulla ex ad Lorem ipsum veniam.
+              </div>
+
+              <div className="flex mt-3 items-center">
+                <div className="w-16">
+                  <img src={images.guy1} />
+                </div>
+                <div className="ClashDisplay pl-3">
+                  <div className="text-white">
+                    Atif Hussain
+                  </div>
+                  <div className="text-[#9da4aa]">
+                    Co-Founder at Kinetic
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-[#192B39] rounded-xl p-10 ">
+              <div className="ClashDisplay flex items-center ">
+                <div className="text-white text-2xl pr-3">5.0</div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+                <div className="w-7 pr-2">
+                  <img className="w-[100%]" src={images.star} />
+                </div>
+              </div>
+
+              <div className="ClashDisplay text-xl text-white mt-16">
+                Cillum ex tempor tempor pariatur eiusmod exercitation pariatur Lorem elit. Ut nisi cillum consequat tempor amet ad non ad ad elit fugiat exercitation qui. Enim enim irure labore ex Lorem adipisicing culpa reprehenderit eu do pariatur aliqua sunt. Tempor tempor qui deserunt amet elit consequat ullamco mollit commodo enim aute id velit labore. Labore elit nulla ex ad Lorem ipsum veniam.
+              </div>
+
+              <div className="flex mt-3 items-center">
+                <div className="w-16">
+                  <img src={images.guy1} />
+                </div>
+                <div className="ClashDisplay pl-3">
+                  <div className="text-white">
+                    Atif Hussain
+                  </div>
+                  <div className="text-[#9da4aa]">
+                    Co-Founder at Kinetic
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <SlantedContainer firstHeading={"300K"} secondHeading={"Total Funding"} description={"Hard work and dedication of the Split Creatives team help our clients secure new successful investment deals."} />
-          <SlantedContainer firstHeading={"350+"} secondHeading={"Completed Projects "} description={"We aim to provide the perfect digital solutions for your business, making this process friendly and chill."} />
-          <SlantedContainer img={images.infinity} secondHeading={"Total Funding"} description={"We aim to provide the perfect digital solutions for your business, making this process friendlty and chill"} />
         </div>
       </div>
 

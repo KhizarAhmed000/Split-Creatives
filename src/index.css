@@ -29,6 +29,10 @@ code {
   /* Subtract 50px from the dynamic height */
 }
 
+.custom-height-white-container {
+  height: calc(100% - 160px) !important;
+}
+
 .gradient-background {
   background: radial-gradient(51.03% 85.92% at 0% 50.02%, rgba(21, 166, 139, 0.50) 0%, rgba(13, 24, 33, 0.50) 100%);
   mask-image: linear-gradient(to bottom, transparent, black 4%, black 100%, transparent);
@@ -36,6 +40,14 @@ code {
 }
 
 .second-gradient {
-  border-radius: 0px 0px 50px 50px;
+  border-radius: 0px 0px 70px 70px;
   background: radial-gradient(89.35% 75.08% at 50% 99.98%, #15A68B 0%, rgba(0, 0, 0, 0.00) 60%);
+}
+
+.bg-container {
+  
+  background-image: url('../src/assets/images/containerImage.png'); /* Replace with your image path */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
